@@ -11,138 +11,41 @@
 </head>
 
 <body>
-    <nav>
-        <a href="#top" class="vert">Top</a>
-        <a href="#one" class="vert">Our Church</a>
-        <a href="#two" class="vert">Our Leaders</a>
-        <a href="#three" class="vert">Youth</a>
-        <a href="#four" class="vert">Sunday Service</a>
-        <a href="#five" class="vert">Our Vision</a>
-        <a href="#six" class="vert">Giving</a>
-        <a href="#seven" class="vert">Contact us</a>
-        <a href="gallery.html">Gallery</a>
-    </nav>
-
-    <header>
-        <h1>Chain Breaker Ministries</h1>
-    </header>
-
-    <section id="one">
-        <h2>Our Church</h2>
-
-        <p>Etiam purus leo, accumsan vel condimentum vitae, consectetur in turpis. Fusce malesuada est vel leo rutrum ullamcorper. Etiam eget justo vel lectus vulputate suscipit.</p>
-    </section>
-
-    <section id="two">
-        <h2>Our Leaders</h2>
-        <article class="leader">
-            <img class="icon" src="images/kaysi.png">
-
-            <h3>Kaysi</h3>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sapien leo, vehicula at vestibulum sed, feugiat vitae enim. Aliquam nec est ac elit gravida egestas. Quisque in tellus sodales felis vulputate hendrerit vitae quis velit.</p>
-        </article>
-
-        <article class="leader">
-            <img class="icon" src="images/sam.png">
-
-            <h3>Sam</h3>
-
-            <p>Etiam purus leo, accumsan vel condimentum vitae, consectetur in turpis. Fusce malesuada est vel leo rutrum ullamcorper. Etiam eget justo vel lectus vulputate suscipit.</p>
-        </article>
-
-        <article class="leader">
-            <img class="icon" src="images/jen.png">
-
-            <h3>Jen</h3>
-
-            <p>Maecenas et pulvinar nulla. Morbi eu mi metus, sit amet imperdiet tellus. Nullam eget dui non sem dictum vestibulum a eu risus. Pellentesque dolor est, venenatis ac tristique tincidunt, fringilla pulvinar enim. Ut rutrum interdum lorem, non porttitor tellus volutpat vel.</p>
-        </article>
-
-    </section>
-
-    <section id="three">
-        <h1>Youth</h1>
-        
-        <p1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed nisl sit amet nisi accumsan tincidunt nec eget mi. Pellentesque condimentum bibendum laoreet. Sed velit sapien, aliquam et urna quis, bibendum lobortis odio. Morbi nec semper odio. Proin fermentum commodo diam et posuere. Morbi at hendrerit quam, in interdum tortor. In sagittis id tellus sit amet finibus. In in eros libero</p1>
-    </section>
-
-    <section id="four">
-        <h2>Sunday Service</h2>
-        <div class="slideshow-container">
-
-            <div class="mySlides fade">
-                <div class="numbertext">1 / 3</div>
-                <img src="images/rocket.png" style="width:50%">
-            </div>
-            
-            <div class="mySlides fade">
-                <div class="numbertext">2 / 3</div>
-                <img src="images/gas-mask.png" style="width:50%">
-
-            </div>
-            
-            <div class="mySlides fade">
-                <div class="numbertext">3 / 3</div>
-                <img src="images/cat.png" style="width:50%">
-
-            </div>
-            
-            </div>
+    <form method="post" action="https://forms.un-static.com/forms/5eeceb2052be57bcbbe02f9484d820d875049f68">
+  <div class="form-group row">
+    <label for="name" class="col-4 col-form-label">Name</label>
+    <div class="col-8">
+      <div class="input-group">
+        <div class="input-group-addon">
+          <i class="fa fa-user"></i>
         </div>
-        <br>
-        
-        <div style="text-align:center">
-        <span class="dot"></span> 
-        <span class="dot"></span> 
-        <span class="dot"></span> 
+        <input id="name" name="name" placeholder="Please enter your name" type="text" required="required" class="form-control">
+      </div>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="email" class="col-4 col-form-label">E-mail address</label>
+    <div class="col-8">
+      <div class="input-group">
+        <div class="input-group-addon">
+          <i class="fa fa-envelope"></i>
         </div>
-        <p>Curabitur vulputate magna a massa sodales quis cursus magna lacinia. Nunc ac vestibulum libero.</p>
-    </section>
-
-    <section id="five">
-        <h1>Our Vision</h1>
-        
-        <p1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed nisl sit amet nisi accumsan tincidunt nec eget mi. Pellentesque condimentum bibendum laoreet. Sed velit sapien, aliquam et urna quis, bibendum lobortis odio. Morbi nec semper odio. Proin fermentum commodo diam et posuere. Morbi at hendrerit quam, in interdum tortor. In sagittis id tellus sit amet finibus. In in eros libero</p1>
-    </section>
-
-    <section id="six">
-        <h1>Giving</h1>
-        
-        <p1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed nisl sit amet nisi accumsan tincidunt nec eget mi. Pellentesque condimentum bibendum laoreet. Sed velit sapien, aliquam et urna quis, bibendum lobortis odio. Morbi nec semper odio. Proin fermentum commodo diam et posuere. Morbi at hendrerit quam, in interdum tortor. In sagittis id tellus sit amet finibus. In in eros libero</p1>
-    </section>
-
-    <section id="seven">
-        <h1>Contact us</h1>
-        <p1>feel free to contact us at: <br> email: example@yourdomain.com</p1>
-    </section>
-    
-    <footer>
-        Footery Stuff Here
-    </footer>
-
-
-<script>
-        let slideIndex = 0;
-        showSlides();
-        
-        function showSlides() {
-            let i;
-            let slides = document.getElementsByClassName("mySlides");
-            let dots = document.getElementsByClassName("dot");
-            for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";  
-        }
-        slideIndex++;
-        if (slideIndex > slides.length) {slideIndex = 1}    
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex-1].style.display = "block";  
-        dots[slideIndex-1].className += " active";
-          setTimeout(showSlides, 2000); // Change image every 2 seconds
-        }
-        </script>
+        <input id="email" name="email" placeholder="Your e-mail address" type="text" required="required" class="form-control">
+      </div>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="message" class="col-4 col-form-label">Message</label>
+    <div class="col-8">
+      <textarea id="message" name="message" cols="40" rows="10" required="required" class="form-control"></textarea>
+    </div>
+  </div>
+  <div class="form-group row">
+    <div class="offset-4 col-8">
+      <button name="submit" type="submit" class="btn btn-primary">Send</button>
+    </div>
+  </div>
+</form>
 </body>
 
 </html>
