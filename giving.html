@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Custom styles for the cards */
+        .giving-card {
+            flex-basis: calc(33.33% - 20px);
+            display: flex;
+            flex-direction: column;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            overflow: hidden;
+            text-align: center;
+            margin: 0 10px;
+            padding: 0 10px; /* Add padding to the cards */
+        }
+
+        .giving-card-content {
+            padding: 20px;
+        }
+
+        .giving-images {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .giving-image {
+            width: 100%;
+            text-align: center;
+            margin: 0 10px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+
+        }
+    </style>
+    <title>Giving - Chain Breaker Ministries</title>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <div class="dropdown">  <!-- div for a dropdown menu -->
+            <a class="dropbtn">About Us</a>
+            <div class="dropdown-content">
+                <a href="about.html">Our Church</a>
+                <a href="about.html#leaders">Our Leaders</a>
+                <a href="about.html#vision">Our Vision</a>
+            </div>
+        </div>
+        <a href="service.html">Sunday Service</a>
+        <a href="giving.html">Giving</a>
+        <a href="youth.html">Youth</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="gallery.html">Gallery</a>
+    </nav>
+
+    <section id="giving">
+        <div class="giving-card">
+            <div class="giving-card-content">
+                <h1>Giving</h1>
+                <p>Your support and contributions enable us to spread the message of hope and love. Thank you for your generosity.</p>
+            </div>
+        </div>
+        <div class="giving-card">
+            <div class="giving-card-content">
+                <h2>Ways to Give</h2>
+                <ul>
+                    <li>Online Giving: You can securely give online through our website.</li>
+                    <li>In-Person Giving: Join us during our Sunday service to make your contribution in person.</li>
+                    <li>Mail: You can also mail your donation to Chain Breaker Ministries, 123 Church Street, Cityville.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="giving-card">
+            <div class="giving-card-content">
+                <h2>Why Give</h2>
+                <p>Giving is an act of worship and a way to partner with us in our mission to make a positive impact in the community.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="giving-images">
+        <div class="giving-image">
+            <img src="online_giving.jpg" alt="Online Giving">
+            <p>Online Giving</p>
+        </div>
+        <div class="giving-image">
+            <img src="in_person_giving.jpg" alt="In-Person Giving">
+            <p>In-Person Giving</p>
+        </div>
+        <div class="giving-image">
+            <img src="mail_giving.jpg" alt="Mail Giving">
+            <p>Mail Giving</p>
+        </div>
+    </section>
+
+    <footer>
+        <!-- Footer content -->
+    </footer>
+</body>
+</html>

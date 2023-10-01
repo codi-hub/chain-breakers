@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Custom styles for the card */
+        .about-card {
+            margin: 20px auto;
+            max-width: 1000px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .about-card-content {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .leader_cards{
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+        }
+
+        .leader_card{
+            margin: 20px auto;
+            max-width: 1000px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            overflow: hidden;
+            padding: 20px;
+        }
+
+        /* Style for the modal container */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+/* Style for the modal content */
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 80%;
+    text-align: center;
+}
+
+    </style>
+    <title>About Us - Chain Breaker Ministries</title>
+    <script>
+        function openModal(eventId) {
+            document.getElementById('modal-' + eventId).style.display = 'block';
+        }
+
+        function closeModal(eventId) {
+            document.getElementById('modal-' + eventId).style.display = 'none';
+        }
+    </script>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <div class="dropdown">  <!-- div for a dropdown menu -->
+            <a href="about.html" class="dropbtn">About Us</a>
+            <div class="dropdown-content">
+                <a href="about.html">Our Church</a>
+                <a href="about.html#leaders">Our Leaders</a>
+                <a href="about.html#vision">Our Vision</a>
+            </div>
+        </div>
+    
+        <a href="service.html">Sunday Service</a>
+        <a href="youth.html">Youth</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="gallery.html">Gallery</a>
+    </nav>
+
+    <section id="our_church">
+        <div class="about-card">
+            <div class="about-card-content">
+                <h1>Our Church</h1>
+                <hr>
+                <img src="church_image.jpg" alt="Our Church Image">
+                <p>At Chain Breaker you can be assured that you won't find clicky circles or feel that you don't belong – we are all unique and bring our own fun to the table. We laugh, live, celebrate, cry and most importantly pray together.</p>
+                <br>
+                <p>At Chain Breaker it is clear that you belong  just like you are accepted without question by God. Nothing that you have done will make Him close the door on you. He loves you and wants to see you grow and heal. Come and meet us as let us help you on your journey and bring you to the Lord if you have not already committed your life to him.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="leaders">
+        <div class="about-card">
+            <div class="about-card-content">
+                <h1>Our Leaders</h1>
+                <hr>
+                <div class="leader_cards">
+                    <div class="leader_card" onclick="openModal('kaysi')">
+                        <img src="img/main/kaysi.jpg" alt="kaysi" width="100%">
+                        <H1>Kaysi</H1>
+                        <hr>
+                        <p1>Meet our inspirational lead pastor, Kaysi! With a heart full of compassion and a vision grounded in faith.</p1>
+                        <br>
+                        <p1 style="text-decoration:underline; color: gray; cursor: pointer;">Read More</p1>
+                    </div>
+                    <div class="leader_card" onclick="openModal('sam')">
+                        <img src="img/main/sam.jpg" alt="sam" width="100%">
+                        <H1>Sam</H1>
+                        <hr>
+                        <p1>Meet Pastor Sam, our dedicated tech-savvy leader, who ensures our church runs smoothly in the digital age.</p1>
+                        <br>
+                        <p1 style="text-decoration:underline; color: gray; cursor: pointer;">Read More</p1>
+                    </div>
+                    <div class="leader_card" onclick="openModal('jen')">
+                        <img src="img/main/jen.jpg" alt="jen" width="100%">
+                        <H1>Jen</H1>
+                        <hr>
+                        <p1>Pastor Jen brings an infectious energy and a strong sense of purpose to our youth ministry.</p1>
+                        <br>
+                        <p1 style="text-decoration:underline; color: gray; cursor: pointer;">Read More</p1>
+                    </div>
+                    <div class="leader_card" onclick="openModal('nick')">
+                        <img src="img/main/nick.jpg" alt="nick" width="100%">
+                        <H1>Jen</H1>
+                        <hr>
+                        <p1>Nick's boundless energy and dedication to our youth ministry make him a true inspiration.</p1>
+                        <br>
+                        <p1 style="text-decoration:underline; color: gray; cursor: pointer;">Read More</p1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="vision">
+        <div class="about-card">
+            <div class="about-card-content">
+                <h1>Our Vision</h1>
+                <hr>
+                <p>
+                    Our church mission statement is in line with the bible verse Plams 107:14 which states that he will bring us out of the darkness the utter darkness and will break away the chains.  we believe that with gods unfailing love that we do not have to be bound to the chains tyhat society binds us in and that he can bring us all to complete freedom.
+                    </p>
+            </div>
+        </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <footer>
+        <div>
+            <a href="www.facebook.com/chainbreakernz" style="text-decoration: underline; color: black;"><img src="img/main/facebook.png" alt="facebook: " height="15px">Find us on Facebook</a>
+            <a href="www.facebook.com/groups/breakthechainsnz/" style="text-decoration: underline; color: black;"><img src="img/main/facebook.png" alt="facebook: " height="15px">Prayer Warriors group</a>
+            <a href="https://www.tiktok.com/@pastorkaysi" style="text-decoration: underline; color: black;"><img src="img/main/tiktok.png" alt="tiktok: " height="15px">Pastor kaysi on tiktok</a>
+        </div>
+        <p>&copy; 2023 Chain Breakers Church. All rights reserved.</p>
+    </footer>
+
+    <div id="modal-kaysi" class="modal" onclick="closeModal('kaysi')">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('kaysi')">&times;</span>
+            <img class="modal-image" src="img/main/kaysi.jpg" alt="kaysi" width="50%">
+            <hr>
+            <p1>Meet our inspirational lead pastor, Kaysi! With a heart full of compassion and a vision grounded in faith, Pastor Kaysi is dedicated to guiding our congregation on their spiritual journey. She brings a wealth of experience and wisdom to our church community, inspiring us to live out our faith in everyday life. Pastor Kaysi's unwavering commitment to the Word and her genuine care for our congregation make her an exceptional spiritual leader. She is a source of inspiration and guidance for all of us as we grow together in faith.</p1>
+        </div>
+    </div>
+
+    <div id="modal-sam" class="modal" onclick="closeModal('sam')">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('sam')">&times;</span>
+            <img class="modal-image" src="img/main/sam.jpg" alt="sam" width="50%">
+            <hr>
+            <p1>Meet Pastor Sam, our dedicated tech-savvy leader, who ensures our church runs smoothly in the digital age. With his extensive computer background, Pastor Sam's passion for enhancing worship experiences and managing technology shines through. From multimedia presentations during services to maintaining our online presence, he's the driving force behind our tech initiatives. His adaptability and commitment to using technology for spiritual growth make him an invaluable part of our ministry team, bridging the gap between faith and the digital world. He's also the loving husband of Pastor Kaysi, further enriching our church's sense of community and faith.</p1>
+        </div>
+    </div>
+
+    <div id="modal-jen" class="modal" onclick="closeModal('jen')">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('jen')">&times;</span>
+            <img class="modal-image" src="img/main/jen.jpg" alt="jen" width="50%">
+            <hr>
+            <p1>Meet the heart and soul of our youth ministry, Pastor Jen! She is a dedicated youth pastor with an unwavering commitment to nurturing the faith and potential of our young members. Pastor Jen is known for her infectious enthusiasm and creative approach to teaching the Gospel. She empowers our youth to grow in faith while fostering a sense of belonging and purpose within the church community. With her leadership, our youth ministry thrives as a vibrant and welcoming space for teenagers to explore their faith and build lasting friendships.</p1>
+        </div>
+    </div>
+
+    <div id="modal-nick" class="modal" onclick="closeModal('nick')">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('nick')">&times;</span>
+            <img class="modal-image" src="img/main/nick.jpg" alt="nick" width="50%">
+            <hr>
+            <p1>Nick's boundless energy and dedication to our youth ministry make him a true inspiration. He connects effortlessly with young minds, creating a nurturing and engaging environment for their spiritual growth. Nick's enthusiasm for mentoring and guiding our youth shines through in every activity and event he leads. His commitment to fostering faith, character, and lasting friendships within our youth group is a testament to his unwavering passion for the future of our church.</p1>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Custom styles for the card */
+        .gallery-card {
+            display: flex;
+            flex-direction: column;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            overflow: hidden;
+            margin: 20px auto;
+            max-width: 800px;
+        }
+
+        .gallery-card-content {
+            padding: 20px;
+            cursor: pointer;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .modal-content {
+            margin: 5% auto;
+            padding: 20px;
+            width: 90%;
+            max-width: 800px;
+            background-color: #fff;
+            position: relative;
+            border-radius: 5px;
+        }
+
+        .modal-image {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+        }
+
+        .close-modal {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            font-size: 24px;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        function openModal(eventId) {
+            document.getElementById('modal-' + eventId).style.display = 'block';
+        }
+
+        function closeModal(eventId) {
+            document.getElementById('modal-' + eventId).style.display = 'none';
+        }
+    </script>
+    <title>Gallery - Chain Breaker Ministries</title>
+</head>
+<nav>
+    <a href="index.html">Home</a>
+    <div class="dropdown">  <!-- div for a dropdown menu -->
+        <a href="about.html" class="dropbtn">About Us</a>
+        <div class="dropdown-content">
+            <a href="about.html">Our Church</a>
+            <a href="about.html#leaders">Our Leaders</a>
+            <a href="about.html#vision">Our Vision</a>
+        </div>
+    </div>
+
+    <a href="service.html">Sunday Service</a>
+    <a href="youth.html">Youth</a>
+    <a href="contact.html">Contact Us</a>
+    <a href="gallery.html">Gallery</a>
+</nav>
+<body>
+    
+
+    <section id="gallery">
+
+        <!--event card-->
+    </section>
+
+
+    <!--event model-->
+
+
+    <footer>
+        <div>
+            <a href="www.facebook.com/chainbreakernz" style="text-decoration: underline; color: black;"><img src="img/main/facebook.png" alt="facebook: " height="15px">Find us on Facebook</a>
+            <a href="www.facebook.com/groups/breakthechainsnz/" style="text-decoration: underline; color: black;"><img src="img/main/facebook.png" alt="facebook: " height="15px">Prayer Warriors group</a>
+            <a href="https://www.tiktok.com/@pastorkaysi" style="text-decoration: underline; color: black;"><img src="img/main/tiktok.png" alt="tiktok: " height="15px">Pastor kaysi on tiktok</a>
+        </div>
+        <p>&copy; 2023 Chain Breakers Church. All rights reserved.</p>
+    </footer>
+</body>
+</html>
